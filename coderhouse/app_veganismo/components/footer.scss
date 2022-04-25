@@ -1,0 +1,24 @@
+@import "../base/maps";
+@import "../base/extends";
+
+footer{
+    background-color: map-get($common-parameters, bg-color);
+    @extend %flexbox_row;
+    justify-content:flex-start;
+    div{
+        margin-right: 70px;
+        ul{
+            list-style-type: map-get($common-parameters, list-type);
+        }
+
+    }
+}
+
+.row_list li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.hh{
+    background-color: red;
+}

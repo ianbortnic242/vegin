@@ -1,0 +1,131 @@
+@import "../base/maps";
+@import "../base/mixin";
+@import "../base/extends";
+
+.background {
+    background-color: map-get($common-parameters, bg-color);
+}
+
+
+li a:hover{
+    color: map-get($common-parameters, hover-color);
+    text-decoration: underline;
+}
+
+.margin_logo{
+    margin-left: 10px;
+}
+
+.margin_pages{
+    margin-right: 40px;
+}
+
+
+.news-image {
+    background-image: url('../img/index/news_3.jpeg');
+    height: 80px;
+    color:mintcream;
+    padding: 20px 0 0 20px;
+    font-size: 50px;
+}
+
+
+.introduction__title {
+    color: darkblue;
+    font-family: 'Arimo', sans-serif;
+    text-transform: uppercase;
+    font-weight: 1,700;
+    text-align: center
+}
+
+a{
+    text-decoration: none;
+}
+
+
+p {
+    text-align:center;
+    line-height: 30px;
+    height: 100px;
+    overflow: auto;
+}
+
+.button {
+    padding: 2px;
+    border:1px solid black;
+    border-radius: 5px;
+    font-size: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer div {
+    padding-left: 20px;
+}
+
+
+.flexbox{
+    @extend %flexbox_row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexbox div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.margin_contacto{
+    margin-right:70px
+}
+
+ul {
+    padding-inline-start:0;
+}
+
+
+.margin-section{
+    margin-bottom: 40px;
+}
+
+.margin-title{
+    margin-top: 40px;
+}
+
+
+.transition:hover{
+    @include transform-transition(scale(1.1), all 1s);
+}
+
+
+.move-center:hover h2{
+    @include transform-transition(translateX(725px) scale(1.4), all 1.5s);
+}
+
+
+/* Bootstrap */
+
+
+.navbar-custom .nav-link{
+    font-size: 18px;
+    color:white;
+    margin-right: 15px;
+}
+
+.font-color a{
+    color:black;
+}
+
+.navbar-margin{
+    margin-left: 200px;
+}
+
+
+.hojita:hover::after{
+    content: map-get($common-parameters, emoji-hover);
+}
+
+.link-active{
+    font-weight: bold;
+}

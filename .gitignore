@@ -1,0 +1,5 @@
+coderhouse/app_veganismo/node_modules/*
+coderhouse/app_veganismo/package-lock.json
+coderhouse/app_veganismo/package.json
+
+.DS_Store
